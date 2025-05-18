@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="The directory page is the main page to navigate to the other pages are made to commit queries">
+    <meta name="author" content="Tabitha Blindu">
+    <title>Directory Page</title>
+    <script src="newscript.js" type="module"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <header class="header">
+            <h1>Directory Page</h1>
+            <nav class="nav_links">
+                <ul>
+                    <li><a href="registry-page.html">Add a vehicle</a></li>
+                    <li><a href="people-search-page.html">People search</a></li>
+                    <li><a href="vehicle-search-page.html">Vehicle search</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <aside class="sidebar">
+            <img src="logo.png" alt="Official logo of the VehicleSafe UK company">
+        </aside>
+
+        <main class="main">
+            <p>Welcome to the official VehicleSafe UK website.<br><br>Visitors can search the database for names and/or registration numbers to find more information on specific incidents.<br>Personal submissions can also be made to the database to assist with the collected data, including information on new vehicles and incidents.
+
+
+
+            <div class="actions_dropdown">
+                <label for="menu">Select an option:</label>
+                <select id="menu">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="registry-page.html">New vehicle entry</option>
+                    <option value="people-search-page.html">Look up person</option>
+                    <option value="vehicle-search-page.html">Look up vehicle</option>
+                </select>
+                <button onclick="access_option()">Submit</button>
+            </div>
+
+        </main>
+        
+        <script src="scripts.js"></script>
+
+        <footer class="footer">
+            <p>VehicleSafe UK 2024</p>
+        </footer>
+    </div>
+</body>
+</html>

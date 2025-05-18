@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="This page is similar to the people search page, as the user enters the registration plate and the page returns entries from the database with the car details, owner name, and license number.">
+    <meta name="author" content="Tabitha Blindu">
+    <title>Vehicle search</title>
+    <script src="newscript.js" type="module"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <header class="header">
+            <h1>Vehicle search</h1>
+            <nav class="nav_links">
+                <ul>
+                    <li><a href="directory-page.html">Directory Page</a></li>
+                    <li><a href="registry-page.html">Add a vehicle</a></li>
+                    <li><a href="people-search-page.html">People search</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <aside class="sidebar">
+            <img src="logo.png" alt="Official logo of the VehicleSafe UK company">
+        </aside>
+
+        <main class="main">
+            <form id="search_form_vehicle">
+                <label for="rego">Search by Registration:</label>
+                <input type="text" id="rego" placeholder="Enter registration plate...">
+                <button id= "rego_button" type="button">Submit</button>
+            </form>
+            
+            <div id="message">
+                <!--results displayed here-->
+            </div>
+
+            <div id="results">
+                <!--display search results here-->
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <p>VehicleSafe UK 2024</p>
+        </footer>
+    </div>
+</body>
+</html>

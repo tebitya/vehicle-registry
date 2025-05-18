@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="This is the registry page that allows the user to enter details to store a new vehicle in the database. They include  the registration plate, make, model, colour, and owner.">
+    <meta name="author" content="Tabitha Blindu">
+    <title>Add a vehicle</title>
+    <script src="newscript.js" type="module"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <header class="header">
+            <h1>Add a vehicle</h1>
+            <nav class=" nav_links">
+                <ul>
+                    <li><a href="directory-page.html">Directory Page</a></li>
+                    <li><a href="people-search-page.html">People search</a></li>
+                    <li><a href="vehicle-search-page.html">Vehicle search</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <aside class="sidebar">
+            <img src="logo.png" alt="Official logo of the VehicleSafe UK company">
+        </aside>
+            <main class="main">
+                <p>Enter the details of the car you want to register</p>
+
+                <form id="register_vehicle" >
+                    <label for="rego">Registration Plate:</label>
+                    <input type="text" id="rego" name="vehicle_id" required>
+
+                    <label for="make">Make:</label>
+                    <input type="text" id="make" name="make" required>
+
+                    <label for="model">Model:</label>
+                    <input type="text" id="model" name="model" required>
+
+                    <label for="colour">Colour:</label>
+                    <input type="text" id="colour" name="colour" required>
+
+                    <label for="owner">Name of Owner:</label>
+                    <input type="text" id="owner" name="owner" required>
+
+                    <br><br><button id="add_vehicle_button" type="submit">Add vehicle</button>
+                </form>
+
+                <div id="message">
+                    <!--results displayed here-->
+                </div>
+
+                <div id="results">
+                    <!--display search results here-->
+                </div>
+
+                <div id="owner_form" >
+                    <form id="new_owner" style="display: none;">
+                        <label for="personid">Person ID:</label>
+                        <input type="text" id="personid" name="personid" required>
+
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required>
+
+                        <label for="dob">DOB:</label>
+                        <input type="text" id="dob" name="dob" required>
+
+                        <label for="license">License Number:</label>
+                        <input type="text" id="license" name="license" required>
+
+                        <label for="expire">Expiration Date:</label>
+                        <input type="text" id="expire" name="expire" required>
+
+                        <br><br><button id="add_owner_button" type="submit">Add owner</button>
+                    </form>
+                </div>
+
+            </main>
+
+        <footer class="footer">
+            <p>VehicleSafe UK 2024</p>
+        </footer>
+    </div>
+</body>
+</html>

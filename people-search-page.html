@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="This page is designed to allow the user to enter a name and then receive results from the database that are under the same name">
+    <meta name="author" content="Tabitha Blindu">
+    <title>People Search Page</title>
+    <script src="newscript.js" type="module"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <header class="header">
+            <h1>People search</h1>
+            <nav class="nav_links">
+                <ul>
+                    <li><a href="directory-page.html">Directory Page</a></li>
+                    <li><a href="registry-page.html">Add a vehicle</a></li>
+                    <li><a href="vehicle-search-page.html">Vehicle search</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <aside class="sidebar">
+            <img src="logo.png" alt="Official logo of the VehicleSafe UK company"> 
+        </aside>
+
+        <main class="main">
+            <form id="search_form_people">
+                <label for="search_input_people">Search by driver name:</label>
+                <input type="text" id="name" placeholder="Enter name...">
+                <label for="search_input_people_reg">Search by registration number:</label>
+                <input type="text" id="license" placeholder="Enter registration...">
+                <button type="button" id= "search_button">Submit</button>
+            </form>
+
+
+            <div id="message">
+                <!--results displayed here-->
+            </div>
+
+            <div id="results">
+                <!--results displayed here-->
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <p>VehicleSafe UK 2024</p>
+        </footer>
+    </div>
+</body>
+</html>
